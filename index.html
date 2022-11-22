@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- font awesome icons cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futur digital</title>
+</head>
+<body class="all">
+
+
+
+  <section class="container">
+    <h2 class="main-title">Inscrivez-vous</h2>
+
+    <!----- Box section  ----->
+
+    <div class="box">
+
+      <!----- form section left  ----->
+
+      <div class="left">
+          <div class="form-section">
+            <form onsubmit='return false'>
+      
+              <!----- Name input  ----->
+              <div class="input-box">
+                <input oninput="testname()" minlength="8" class="inp" id="name" required type="text" name="name" placeholder="Nom complete">
+                <label class="name-valide" id="namealert">Le nom est pas valide</label>
+              </div>
+              
+              <!----- Email input  ----->
+              <div class="input-box">
+                <input oninput="testemail()" id="email" class="inp" required type="email" name="email" placeholder="Adresss email">
+                <label class="email-valide" id="emailalert">Email est pas valide</label>
+              </div>
+
+              <!----- Password input  ----->
+              <div class="input-box">
+                <div class="password">
+                  <input oninput="passtest()" id="password" class="inp" required type="password" name="password" placeholder="Mot de passe">
+                  <button  onclick="show1()"><i class="fa-solid fa-eye"></i> </button>
+                </div>
+                <label class="pass-valide" id="pass-valide">le mot de passe doit contenir minimum 10 caracteres dont 1 caractere special</label>
+              </div>
+
+              <!----- Second password  ----->
+              <div class="input-box">
+                <div class="password">
+                  <input oninput="passTwoTest()" id="pasTwo" class="inp" required  type="password" name="password-two" placeholder="Confirmer le mot de passe" id="">
+                  <button onclick="show2()"><i class="fa-solid fa-eye"></i> </button>
+                </div>
+                <label class="pass-valide-two" id="pass-valideTwo">Le mot de pass est incorrect</label>
+              </div>
+
+              <!----- Submit   ----->
+              <div class="submit">
+                <div>
+                  <label>
+                      <input type="checkbox"  class="toggle-checkbox" id="">se sevenir de mois
+                      <div class="toggle-switch"></div>
+                  </label>
+                </div>
+                <input class="inp" type="submit" value="S'inscrire">
+              </div>
+
+            </form>
+
+            <!----- Socials  ----->
+            <div class="social">
+              <button> <i class="fa-brands fa-facebook-f"></i>S’inscrire avec facebook</button>
+              <button><i class="fa-brands fa-google"></i>S’inscrire avec google</button>
+            </div>
+          </div>
+      </div>
+
+      
+      <!----- image section right  ----->
+
+      <div class="right">
+        <img src="Sign up-rafiki (2).png" alt="">
+      </div>
+
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
